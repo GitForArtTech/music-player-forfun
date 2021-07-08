@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <!-- Song -->
+      <div class="img-container">
+        <img src="img/weekend.jpg" alt="" />
+        <!-- <video src="video/weekend.mov" autoplay muted loop></video> -->
+      </div>
+      <h2 id="title">Weekend</h2>
+      <h3 id="artist">Taeyeon-金太耎</h3>
+      <audio src="./music/weekend.mp3"></audio>
+      <!-- Progress -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <span id="duration">4:06</span>
+        </div>
+      </div>
+      <!-- Controls -->
+      <div class="player-controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play main-button" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
